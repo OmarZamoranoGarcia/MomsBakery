@@ -1,0 +1,53 @@
+@use "../../main.scss" as v;
+
+//Mobile firts
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: v.$color-neutral;
+
+  .main-div-images {
+    position: relative;
+    width: 70%;
+
+    .main-image {
+      width: 100%;
+      border-radius: 10%;
+      display: block;
+    }
+
+    .main-image2 {
+      width: 50%;
+      border-radius: 10%;
+      position: absolute;
+      bottom: -5%;
+      left: -5%;
+    }
+  }
+
+  .main-title {
+    text-align: center;
+    margin-top: clamp(2rem, 5vw, 3rem);
+    font-family: v.$font-title;
+
+    .main-title-span {
+      text-decoration: wavy;
+      color: v.$color-pink;
+      font-style: oblique;
+    }
+  }
+
+  .main-description {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: v.$font-body;
+  }
+}
+
+//767px maximo para movil, 768px empieza a ser tablet y desktop
+@media (min-width: 768px) {
+  
+}

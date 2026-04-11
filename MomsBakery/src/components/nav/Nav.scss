@@ -1,0 +1,59 @@
+@use "../../main.scss" as v;
+
+//Mobile firts
+.nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-title {
+    font-family: v.$font-title;
+    font-style: oblique;
+  }
+
+  .nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+//767px maximo para movil, 768px empieza a ser tablet y desktop
+@media (min-width: 768px) {
+  .nav {
+    font-size: clamp(1rem, 1.2rem, 4rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    .nav-ul {
+      font-size: clamp(0.5rem, 1.5rem, 2rem);
+      padding: 1rem;
+      display: block;
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: v.$color-purple;
+        transition: all 0.3s ease;
+        font-style: oblique;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
