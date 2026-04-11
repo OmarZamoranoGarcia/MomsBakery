@@ -23,15 +23,19 @@ jobs:
           node-version: 18
           
       - name: Install dependencies
-        run: npm install
-        
+        run: |
+          cd MomsBakery 
+          npm install
+          
       - name: Build
-        run: npm run build
-        
+        run: |
+          cd MomsBakery
+          npm run build
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./MomsBakery/dist 
           
   deploy:
     environment:
