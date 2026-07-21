@@ -13,37 +13,6 @@ export default function Ubications() {
       <div id="ubicationsFlex">
         <div className="ubications-div">
           <h2>
-            <LuMapPin /> VYS ShowRoom
-          </h2>
-          <div className="ubications-div-networks">
-            <a
-              href="https://www.instagram.com/vys.showroom/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <InstargramButton />
-            </a>
-            <a
-              href="https://www.facebook.com/vysshowroom/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FacebookButton />
-            </a>
-          </div>
-          <div className="ubications-div-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.825304238825!2d-116.95100430956653!3d32.53081244435129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94797c0f03133%3A0x8a2b61ded60651e6!2sPlaza%20Alameda%20Otay%20Town%20Center!5e0!3m2!1ses!2smx!4v1775799326078!5m2!1ses!2smx"
-              width="100%"
-              height="300"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div className="ubications-div">
-          <h2>
             <LuMapPin /> Angely Showroom & Cofee
           </h2>
           <div className="ubications-div-networks">
