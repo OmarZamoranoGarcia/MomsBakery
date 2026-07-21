@@ -1,7 +1,9 @@
 import "./Nav.scss";
-import { WhatsAppButton, InstargramButton } from "../buttons/buttons";
+import { WhatsAppButton, InstargramButton } from "../buttons/Buttons";
 
 export default function Nav() {
+  const cellNumber = import.meta.env.VITE_CELL_NUMBER;
+
   return (
     <nav className="nav">
       <h1 className="nav-title">Mom´s Bakery</h1>
@@ -19,7 +21,7 @@ export default function Nav() {
           <InstargramButton />
         </a>
         <a
-          href="https://wa.me/526632032472?text=Hola%20quiero%20información!%20%F0%9F%A7%81"
+          href={`https://wa.me/${cellNumber}?text=Hola%20quiero%20información!%20%F0%9F%A7%81}`}
           target="_blank"
           rel="noopener noreferrer"
         >

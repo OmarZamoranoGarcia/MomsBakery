@@ -1,5 +1,5 @@
 import "./Ubications.scss";
-import { InstargramButton, FacebookButton } from "../buttons/buttons";
+import { InstargramButton, FacebookButton } from "../buttons/Buttons";
 import { LuMapPin } from "react-icons/lu";
 
 export default function Ubications() {

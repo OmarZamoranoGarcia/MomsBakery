@@ -5,6 +5,8 @@ import { GiRingBox } from "react-icons/gi";
 import { BiSolidDish } from "react-icons/bi";
 
 export default function Custom() {
+  const cellNumber = import.meta.env.VITE_CELL_NUMBER;
+
   return (
     <section className="custom" id="pedidos">
       <div className="custom-div">
@@ -29,7 +31,7 @@ export default function Custom() {
           </li>
         </ul>
         <button className="custom-div-button">
-          <a href="https://wa.me/526632032472?text=Hola%20quiero%20información!%20%F0%9F%A7%81"
+          <a href={`https://wa.me/${cellNumber}?text=Hola%20quiero%20información!%20%F0%9F%A7%81`}
             target="_blank"
             rel="noopener noreferrer"
           >
