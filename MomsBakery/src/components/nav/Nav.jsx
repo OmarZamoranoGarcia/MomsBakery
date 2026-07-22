@@ -21,7 +21,7 @@ export default function Nav() {
           <InstargramButton />
         </a>
         <a
-          href={`https://wa.me/${cellNumber}?text=Hola%20quiero%20información!%20%F0%9F%A7%81}`}
+          href={`https://wa.me/${cellNumber}?text=Hola%20quiero%20información!%20%F0%9F%A7%81`}
           target="_blank"
           rel="noopener noreferrer"
         >
